@@ -21,20 +21,20 @@ namespace mvc_codigo_1
             //fin de creacion de rutas propias
 
             /*creo ruta de Clientes*/
-            routes.MapRoute(
+            /*routes.MapRoute(
                 "Clientes",
                 /*"Clientes/{action}/{id}",
                 defaults: new { controller = "Clientes", action = "ListadoClientes", id = UrlParameter.Optional }*/
-                "Clientes/{controller}/{action}/{id}",
+                /*"Clientes/{controller}/{action}/{id}",
                 defaults: new { controller = "Clientes", action = "Clientes", id = UrlParameter.Optional }
-                );
+                );*/
             //fin de creacion de rutas Clientes
             /*ruta del curso*/
-            /*routes.MapRoute(
+            routes.MapRoute(
                 "ClientesBuscar",
                 "Clientes/{nombre}",
                 defaults: new { controller = "Clientes", action = "Buscar", nombre = UrlParameter.Optional }
-                );*/
+                );
 
             routes.MapRoute(
                 name: "Default",

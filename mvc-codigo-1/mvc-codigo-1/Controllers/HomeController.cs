@@ -26,6 +26,10 @@ namespace mvc_codigo_1.Controllers
 
             return View();
         }
+        public ActionResult Empleados()
+        {
+            return View();
+        }
         /*public ActionResult Clientes()
         {
             ViewBag.Message = "Welcome to Clients";

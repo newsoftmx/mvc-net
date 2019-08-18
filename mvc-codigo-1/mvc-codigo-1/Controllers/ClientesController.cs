@@ -9,20 +9,26 @@ namespace mvc_codigo_1.Controllers
     public class ClientesController : Controller
     {
         // GET: Clientes
-        public ActionResult Clientes()
+        /*public ActionResult Clientes()
         {
             return View();
             //return "Clientes Chingon";
-        }
+        }*/
         /*public string ListadoClientes()
         {
             return "Clientes Chingon";
         }*/
         //action del curso
-        /*public ActionResult Buscar(string nombre)
+        public ActionResult Buscar(string nombre)
         {
             var input = Server.HtmlEncode(nombre) + " Bienvenido";
             return Content(input);
-        }*/
+        }
+        [HttpGet]
+        public ActionResult Buscar()
+        {
+            var input = "Este es un selector HTTP Get";
+            return Content(input);
+        }
     }
 }
