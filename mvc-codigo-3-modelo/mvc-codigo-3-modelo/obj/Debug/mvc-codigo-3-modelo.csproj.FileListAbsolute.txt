@@ -73,3 +73,9 @@ C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-3-modelo.csproj.CopyComplete
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-3-modelo.dll
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-3-modelo.pdb
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.dll
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.SqlServer.dll
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.xml
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.SqlServer.xml
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc_codigo_3_modelo.Migrations.InitialCreate.resources
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-3-modelo.csproj.GenerateResource.cache
