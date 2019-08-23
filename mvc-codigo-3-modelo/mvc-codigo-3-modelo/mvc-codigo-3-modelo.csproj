@@ -118,6 +118,14 @@
     <Compile Include="Migrations\201908210356199_InitialCreate.Designer.cs">
       <DependentUpon>201908210356199_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908230204458_Dataannotations.cs" />
+    <Compile Include="Migrations\201908230204458_Dataannotations.Designer.cs">
+      <DependentUpon>201908230204458_Dataannotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908230300444_Dataannotations1.cs" />
+    <Compile Include="Migrations\201908230300444_Dataannotations1.Designer.cs">
+      <DependentUpon>201908230300444_Dataannotations1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Clientes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,6 +137,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
     <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Details.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -142,6 +151,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201908210356199_InitialCreate.resx">
       <DependentUpon>201908210356199_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908230204458_Dataannotations.resx">
+      <DependentUpon>201908230204458_Dataannotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908230300444_Dataannotations1.resx">
+      <DependentUpon>201908230300444_Dataannotations1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

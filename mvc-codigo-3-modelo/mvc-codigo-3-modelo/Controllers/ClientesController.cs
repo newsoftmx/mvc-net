@@ -28,6 +28,9 @@ namespace mvc_codigo_3_modelo.Controllers
         // GET: Clientes
         //defino mi variable privada en EmpDBContext, pasa usar la gestion de datos de base de datos
         private EmpDBContext db = new EmpDBContext();
+        //añado el siguiente filtro
+        //[OutputCache (Duration =60)]
+        [OutputCache (CacheProfile ="Cache5Minutos")]
         //modifico mi metodo del actionresult Index
         public ActionResult Index()
         {
@@ -50,9 +53,11 @@ namespace mvc_codigo_3_modelo.Controllers
         }
 
         // GET: Clientes/Details/5 muestra el detalle de los datos
+        [OutputCache (Duration = int.MaxValue, VaryByParam = "id")]
         public ActionResult Details(int id)
         {
-            return View();
+            var Clientes = db.Clientes.SingleOrDefault(e => e.ID == id);
+            return View(Clientes);
         }
 
         // GET: Clientes/Create permite crear un cliente

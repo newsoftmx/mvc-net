@@ -20,8 +20,8 @@ namespace mvc_codigo_3_modelo.Models
         [DisplayFormat (DataFormatString = "0:YYYY-MM-dd", ApplyFormatInEditMode = true)]
         [Display (Name ="Fecha de alta")]
         
-        [Range (18,70)]
         public DateTime FechaAlta { get; set; }
+        [Range(18, 70)]
         public int edad { get; set; }
     }
    // el Entity Framework genera una base de datos con el nombre que le demos al DbContext

@@ -79,3 +79,5 @@ C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.x
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\bin\EntityFramework.SqlServer.xml
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc_codigo_3_modelo.Migrations.InitialCreate.resources
 C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc-codigo-3-modelo.csproj.GenerateResource.cache
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc_codigo_3_modelo.Migrations.Dataannotations.resources
+C:\cursos2\mvc-net\mvc-codigo-3-modelo\mvc-codigo-3-modelo\obj\Debug\mvc_codigo_3_modelo.Migrations.Dataannotations1.resources
