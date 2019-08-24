@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvc-codigo-7-bootstrap", "mvc-codigo-7-bootstrap.csproj", "{6501962B-B7F7-475C-88A2-2A8F49CC0796}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6501962B-B7F7-475C-88A2-2A8F49CC0796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6501962B-B7F7-475C-88A2-2A8F49CC0796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6501962B-B7F7-475C-88A2-2A8F49CC0796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6501962B-B7F7-475C-88A2-2A8F49CC0796}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D70C931-A41B-433D-BAD2-92D502E5EF79}
+	EndGlobalSection
+EndGlobal

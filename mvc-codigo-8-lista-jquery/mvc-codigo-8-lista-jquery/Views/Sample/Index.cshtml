@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<!--aquí agregamos JQuery a la vista-->
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script>
+    $(document).ready(function () {
+        /*lo primero que hace es deshabilitar el código de dropdownlist*/
+        $("#Provincia").prop("disabled", true);
+        //esta linea verifica que el control /texto, ha cambiado y  sea diferente a seleccionar
+        $("#Pais").change(function () {
+            if ($("#Pais").val() != "Seleccionar") {
+                //al cambiar el país se crea el objeto PaisOptions
+                var PaisOptions = {};//es obeto por tener llaves
+                //las porpiedades del objeto PaisOptions son .url .type .data etc
+                //propiedad url apunta al metodo procvincias
+                PaisOptions.url = "/Sample/Provincias";
+                //especificamos el metodo de accion
+                PaisOptions.type = "POST";
+                //mandamos en JSON el nombre del país
+                PaisOptions.data = JSON.stringify({ Pais: $("#Pais").val() });
+                PaisOptions.datatype = "json";
+                PaisOptions.contentType = "application/json";
+                PaisOptions.success = function (ListaProvincias) {
+                    $("#Provincia").empty();
+                    for (var i = 0; i < ListaProvincias.length; i++) {
+                        $("#Provincia").append("<option>" + ListaProvincias[i] + "</option>");
+                    }
+                    $("#Provincia").prop("disabled", false);
+                };
+                PaisOptions.error = function () { alert("Error Obteniendo las Provincias!!"); };
+                $.ajax(PaisOptions);
+            }
+            else {
+                $("#Provincia").empty();
+                $("#Provincia").prop("disabled", true);
+            }
+        });
+    });
+</script>
+@*Empezamos a utilizar RAZOR y HTMLHELPERS*@
+@using (Html.BeginForm("Index", "Sample", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <h4>Secciona País y Provincias</h4>
+    <hr />
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.Label("Select Pais:", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @*se añade un htmlhelpers dropdown list llamado pais, es renderizado por el htmlhelper llamado Pais*@
+            @Html.DropDownList("Pais", ViewData["Paises"] as SelectList, new { @class = "form-control" })
+        </div>
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.Label("Select Provincias:", new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            <select id="Provincia"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Enviar" />
+        </div>
+    </div>
+}
