@@ -12,6 +12,31 @@
     <title>Index</title>
 </head>
 <body>
+    <!-- se comenta el form"<form>-->
+    @using (Html.BeginForm())
+    { //vamos a añadir razor
+    <fieldset>
+        <legend>Agregar Cliente</legend>
+        <div>
+            <label for="NombreEmpresa">Nombre de la empresa: </label>
+            <input type="text" name="NombreEmpresa" value="" />
+        </div>
+        <div>
+            <label for="NombreContacto">Nombre del contacto</label>
+            <input type="text" name="NombreContacto" value="" />
+        </div>
+        <div>
+            <label for="Puesto"> Puesto en la empresa</label>
+            <input type="text" name="Puesto" value="" />
+        </div>
+        <div>
+            <label> &nbsp;</label>
+            <input type="submit" value="Enviar Datos" class="submit" />
+        </div>
+    </fieldset>
+    <div> La hora actual es: @DateTime.Now </div>
+    }
+    <!--</form>-->
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
@@ -28,26 +53,27 @@
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaAlta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.edad)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaAlta)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.edad)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
     </table>
 </body>
 </html>
